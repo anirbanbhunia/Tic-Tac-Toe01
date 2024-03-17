@@ -1,11 +1,11 @@
 
 function Headline({currTurn,currLogic,tieLogic}){
-    if(tieLogic == true){
+    if(tieLogic === true){
         return(
             <span className="text-red-600 mx-[55px] md:mx-[79px]">It was a draw</span>
         )
     }
-    if(currLogic == false){
+    if(currLogic === false){
         return(
             <span>Current turn: &nbsp;{currTurn?"X":"O"}</span>
         )
